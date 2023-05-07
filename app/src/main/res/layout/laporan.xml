@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/coin"
+        android:layout_marginTop="50px"
+        ></ImageView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="60px"
+        android:textStyle="bold"
+        android:layout_marginTop="50px"
+        android:layout_gravity="center"
+        android:text="Rekap Transaksi Keuangan" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="373dp"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50px"
+                android:text="Total Pemasukan (Kredit)"
+                android:textAlignment="textStart"
+                android:textSize="40px"></TextView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50px"
+                android:text="Rp.200.000"
+                android:textAlignment="textEnd"
+                android:textSize="40px"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50px"
+                android:text="Total Pengeluaran (Debet)"
+                android:textAlignment="textStart"
+                android:textSize="40px"></TextView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50px"
+                android:text="Rp.200.000"
+                android:textAlignment="textEnd"
+                android:textSize="40px"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:background="@color/primary"
+            android:orientation="horizontal"
+            android:paddingTop="20px"
+            android:paddingBottom="20px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Saldo"
+                android:textColor="@color/white"
+                android:textSize="40px"
+
+                ></TextView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Rp.400.000"
+                android:textAlignment="textEnd"
+                android:textColor="@color/white"
+                android:textSize="40px"></TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20px">
+
+        <Button
+            android:id="@+id/back"
+            android:onClick="back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="kembali"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="3dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
