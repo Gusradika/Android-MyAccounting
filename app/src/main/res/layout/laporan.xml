@@ -9,10 +9,9 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/coin"
+        android:layout_height="213dp"
         android:layout_marginTop="50px"
-        ></ImageView>
+        android:src="@drawable/coin"></ImageView>
 
     <TextView
         android:id="@+id/textView"
@@ -47,6 +46,7 @@
 
 
             <TextView
+                android:id="@+id/txtKredit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50px"
@@ -70,6 +70,7 @@
 
 
             <TextView
+                android:id="@+id/txtDebet"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50px"
@@ -85,9 +86,12 @@
             android:background="@color/primary"
             android:orientation="horizontal"
             android:paddingTop="20px"
+            android:paddingLeft="10px"
+            android:paddingRight="10px"
             android:paddingBottom="20px">
 
             <TextView
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -99,6 +103,7 @@
 
 
             <TextView
+                android:id="@+id/saldo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
